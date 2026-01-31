@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #fafafa;
+  color: #262626;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  width: 100%;
+}
+
+/* Used AI to help with Cart section styling */
+.cart-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin: 0px;
+}
+
+.cart-section h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.empty-cart {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  padding: 30px;
+  font-style: italic;
+}
+
+.cart-items-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-right: 50px;
+}
