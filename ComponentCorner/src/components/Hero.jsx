@@ -1,17 +1,20 @@
+import heroImage from '../assets/hero-image.jpg';
 import './Hero.css';
+import { useNavigate } from 'react-router-dom';
 
 function Hero(props) {
+  const navigate = useNavigate();
   return (
     <section className="hero">
       <img 
-        src="https://placehold.co/1200x400/667eea/ffffff?text=Welcome" 
+        src={heroImage} 
         alt="Hero Banner" 
         className="hero-image"
       />
       <div className="hero-content">
         <h1 className="hero-title">{props.title}</h1>
         <p className="hero-subtitle">{props.subtitle}</p>
-        <h2 className="hero-cta">{props.ctaText}</h2>
+        <button className="hero-cta" onClick={() => navigate('/products')}>{props.ctaText}</button>
       </div>
     </section>
   );

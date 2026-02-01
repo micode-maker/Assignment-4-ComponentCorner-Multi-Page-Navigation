@@ -8,7 +8,7 @@ function ProductCard(props) {
         <img 
           src={props.image} 
           alt={props.name}
-          className="product-image"
+          className="product-image" 
         />
       </div>
       <div className="product-info">
